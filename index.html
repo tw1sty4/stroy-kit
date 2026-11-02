@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СтройКит — Магазин строительных инструментов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-flex">
+            <h1 class="logo">Строй<span>Кит</span></h1>
+            <nav class="nav">
+                <a href="#catalog">Каталог</a>
+                <a href="#cart" class="cart-link">Корзина (<span id="cart-count">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <h2>Профессиональный инструмент для любых задач</h2>
+            <p>Надежное оборудование для строительства и ремонта с доставкой.</p>
+            <a href="#catalog" class="btn">Смотреть каталог</a>
+        </div>
+    </section>
+
+    <!-- Каталог товаров -->
+    <main class="container" id="catalog">
+        <h2 class="section-title">Каталог товаров</h2>
+        <div class="products-grid" id="products-container">
+            <!-- Карточки генерируются через JS или прописаны статично -->
+        </div>
+    </main>
+
+    <!-- Корзина -->
+    <section class="cart-section container" id="cart">
+        <h2 class="section-title">Ваша корзина</h2>
+        <div class="cart-content">
+            <ul id="cart-items" class="cart-items-list">
+                <p class="empty-cart">Корзина пуста</p>
+            </ul>
+            <div class="cart-total">
+                <h3>Итого: <span id="total-price">0</span> ₽</h3>
+                <button class="btn checkout-btn" onclick="checkout()">Оформить заказ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 СтройКит. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
